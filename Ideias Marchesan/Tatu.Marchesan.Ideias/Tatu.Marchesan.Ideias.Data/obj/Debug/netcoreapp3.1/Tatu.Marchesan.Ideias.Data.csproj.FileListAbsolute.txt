@@ -1,0 +1,12 @@
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.deps.json
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.csprojAssemblyReference.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.AssemblyInfoInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.AssemblyInfo.cs
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.csproj.CoreCompileInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.csproj.CopyComplete
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Data\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Data.pdb

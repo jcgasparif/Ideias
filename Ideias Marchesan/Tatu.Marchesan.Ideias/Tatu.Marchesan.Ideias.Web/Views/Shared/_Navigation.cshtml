@@ -1,0 +1,54 @@
+﻿@using Tatu.Marchesan.Ideias.App.Models
+
+@inject Microsoft.AspNetCore.Identity.SignInManager<AppUser> SignInManager
+@inject Microsoft.AspNetCore.Identity.UserManager<AppUser> UserManager
+
+<nav class="navbar-default navbar-static-side " role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+
+            <li class="nav-header">
+                <div class="dropdown profile-element pl-13">
+                    <img alt="TATU Marchesan" src="~/Images/logotatu2019.png" class="tatu-mini-logo" />
+                    <div class="label label-primary tatu-mini-logo-title">MARCHESAN</div>
+                </div>
+                <div class="logo-element">
+                    <img src="~/Images/logotatu2019.png" class="tatu-icon-logo" alt="TATU Marchesan" />
+                </div>
+            </li>
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <li suppress-by-claim-name="Ideias" suppress-by-claim-value="Details" class="special_link hover_yellow">
+                    <a><span class="nav-label">Painel de Ideias</span></a>
+                </li>
+                <li suppress-by-claim-name="Ideias" suppress-by-claim-value="Details" id="lnkPaginaPrincipal" title="Página Principal" class="@Html.IsSelected(controller: "Home", action: "Index")">
+                    <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> <span class="nav-label">Página Principal</span> </a>
+                </li>
+                <li suppress-by-claim-name="Ideias" suppress-by-claim-value="Details" id="lnkIdeias" title="Ideias" class="@Html.IsSelected(controller: "Ideias", action: "Index")">
+                    <a href="@Url.Action("Index", "Ideias")"><i class="fa fa-comments"></i> <span class="nav-label">Ideias</span></a>
+                </li>
+            }
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <li suppress-by-claim-name="Comite" suppress-by-claim-value="Avaliar" id="lnkComite" title="Comitê" class="@Html.IsSelected(controller: "Comite", action: "Index")">
+                    <a href="@Url.Action("Index", "Comite")"><i class="fa fa-users"></i> <span class="nav-label">Comitê</span></a>
+                </li>
+            }
+
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <li class="special_link hover_yellow">
+                    <a><span class="nav-label">Administração do Sistema</span></a>
+                </li>
+                <li id="lnkUsuarios" title="Usuários" class="@Html.IsSelected(controller: "Admin", action: "Index")">
+                    <a href="@Url.Action("Index", "Admin")"><i class="fa fa-user"></i> <span class="nav-label">Usuários</span></a>
+                </li>
+                <li id="lnkRelevancia" title="Relevância" class="@Html.IsSelected(controller: "Relevancia", action: "Index")">
+                    <a href="@Url.Action("Index", "Relevancia")"><i class="fa fa-balance-scale"></i><span class="nav-label">Relevância</span></a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>

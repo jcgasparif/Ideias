@@ -1,0 +1,152 @@
+﻿@using Tatu.Marchesan.Ideias.Domain.Enums;
+@model Tatu.Marchesan.Ideias.App.ViewModels.IdeiasViewModel
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Gestão de Ideias</h2>
+        <small>Visualize os detalhes de uma ideia previamente criada no sistema</small>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            @if (!Model.NovaIdeiaEmCriacao && Model.StatusId == StatusEnum.EmAnalise1 || Model.StatusId == StatusEnum.EmAnalise2)
+            {
+                <div class="ibox">
+                    <div class="ibox-title header-yellow">
+                        <h5><spam class="fa fa-exclamation-triangle"></spam>&nbsp;&nbsp;Ideia em análise</h5>
+                    </div>
+                </div>
+            }
+
+            @if (Model.StatusId == StatusEnum.AprovadaEmComite)
+            {
+                <div class="ibox">
+                    <div class="ibox-title green  header-yellow">
+                        <h5><spam class="fa fa-thumbs-up"></spam>&nbsp;&nbsp;Ideia Aprovada</h5>
+                    </div>
+                </div>
+            }
+
+            @if (Model.StatusId == StatusEnum.IdeiaNaoAprovada)
+            {
+                <div class="ibox">
+                    <div class="ibox-title red header-yellow">                        
+                        <h5><spam class="fa fa-thumbs-down"></spam>&nbsp;&nbsp;Ideia Reprovada</h5>
+                    </div>
+                </div>
+            }
+
+            <div class="ibox">
+                <div class="ibox-title header-blue">
+                    <h5>Visualizar ideia</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.DataInclusao)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.DataInclusao)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.Descricao)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.Descricao)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.ProdutoNovo)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.ProdutoNovo)
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.ProdutoExistente)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.ProdutoExistente)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.ExisteConcorrente)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.ExisteConcorrente)
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.DetalhesConcorrente)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.DetalhesConcorrente)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.Argumentos)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.Argumentos)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.DataSubAnalise)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.DataSubAnalise)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-2 col-form-label">
+                            @Html.DisplayNameFor(model => model.Status)
+                        </div>
+                        <div class="col-sm-10 col-form-label">
+                            @Html.DisplayFor(model => model.Status.Descricao)
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="ibox-title">
+                        <h5>Anexos</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <partial name="_ListaAnexos" model="@Model" />
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="ibox-title">
+                        <h5>Reunião</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <partial name="_ListaReuniao" model="@ViewBag.Reuniao" />
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 text-right">
+                            <a class="btn btn-white" asp-controller="Ideias" asp-action="Index">Voltar</a>
+                            <a class="btn btn-primary" suppress-by-userid="@Model.AspNetUsersId" asp-action="Edit" asp-route-id="@Model.Id" suppress-by-ideiaId="@Model.Id" title="Editar">Editar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script async src="~/js/ideias.min.js" asp-append-version="true"></script>
+}

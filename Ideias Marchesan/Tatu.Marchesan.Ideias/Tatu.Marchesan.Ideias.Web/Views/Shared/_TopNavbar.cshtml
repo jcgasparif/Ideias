@@ -1,0 +1,25 @@
+﻿@using Tatu.Marchesan.Ideias.App.Models
+
+@inject Microsoft.AspNetCore.Identity.SignInManager<AppUser> SignInManager
+@inject Microsoft.AspNetCore.Identity.UserManager<AppUser> UserManager
+
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top white-bg mb-0" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="email-welcome">
+                <span class="m-r-sm text-muted welcome-message">@User.Identity.Name</span>
+            </li>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <li class="nav-item">
+                    <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button type="submit" class="nav-link btn btn-link text-dark" title="Sair"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></button>
+                    </form>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

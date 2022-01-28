@@ -1,0 +1,50 @@
+﻿@using Tatu.Marchesan.Ideias.App.ViewModels;
+
+@model IEnumerable<UsuariosFiltroViewModel>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Gestão de Usuários</h2>
+        <small>Visualize todos os usuários cadastradas no sistema</small>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Lista de usuários</h5>
+                    <div class="ibox-tools top-10">
+                        <p>
+                            <a class="btn btn-primary" asp-action="Create">Novo Usuário</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="ibox-content m-b-sm border-bottom">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label" for="tbxUserName">Nome do Usuário</label>
+                                <input type="text" id="tbxUserName" name="tbxUserName" placeholder="sysadmin" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="col-form-label" for="tbxEmail">E-mail</label>
+                                <input type="text" id="tbxEmail" name="tbxEmail" placeholder="email@provedor.com" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lista-usuarios-content">
+                        <partial name="_ListaUsuarios" model="@Model" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script async src="~/js/usuario.min.js" asp-append-version="true"></script>
+}

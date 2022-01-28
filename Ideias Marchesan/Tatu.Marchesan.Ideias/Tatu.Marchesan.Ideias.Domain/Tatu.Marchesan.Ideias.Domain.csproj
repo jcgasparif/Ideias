@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Models\AspNetRoleClaims.cs" />
+    <Compile Remove="Entities\Models\AspNetRoles.cs" />
+    <Compile Remove="Entities\Models\AspNetUserClaims.cs" />
+    <Compile Remove="Entities\Models\AspNetUserRoles.cs" />
+    <Compile Remove="Entities\Models\AspNetUsers.cs" />
+    <Compile Remove="Interfaces\Service\IUsuarioService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Tatu.Marchesan.Ideias.Domain.csproj.vspscc" />
+  </ItemGroup>
+
+</Project>

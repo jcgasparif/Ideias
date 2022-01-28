@@ -1,0 +1,114 @@
+﻿@using Tatu.Marchesan.Ideias.App.ViewModels;
+
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="m-t-lg m-b-lg">
+                <h1>
+                    Últimas ideias cadastradas
+                </h1>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Data de inclusão</th>
+                                    <th>Descrição da ideia</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    var ideiasResultList = (IList<IdeiasViewModel>)ViewData["IdeiasResult"];
+
+                                    if (ideiasResultList.Any())
+                                    {
+                                        foreach (var item in ideiasResultList)
+                                        {
+                                            <tr>
+                                                <td>@item.DataInclusao.ToString("dd/MM/yyyy HH:mm")</td>
+                                                <td>@item.Descricao</td>
+                                                <td class="text-right">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-white" disable-by-claim-name="Ideias" disable-by-claim-value="Details" asp-controller="Ideias" asp-action="Details" asp-route-id="@item.Id" title="Visualizar">
+                                                            <spam class="fa fa-search"></spam>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="3">Não existe ideias cadastradas até o momento</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="m-t-lg m-b-lg">
+                <h1>
+                    Últimas ideias aprovadas pelo comitê
+                </h1>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Descrição da ideia</th>
+                                    <th>Data da aprovação</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    var comiteResultList = ((IList<ComiteViewModel>)ViewData["ComiteResult"]);
+
+                                    if (comiteResultList.Any())
+                                    {
+                                        foreach (var item in comiteResultList)
+                                        {
+                                            <tr>
+                                                <td>@item.Ideia.Descricao</td>
+                                                <td>@item.DataAnalise.ToString("dd/MM/yyyy HH:mm")</td>
+                                                <td class="text-right">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-white" disable-by-claim-name="Comite" disable-by-claim-value="Details" asp-controller="Comite" asp-action="Details" asp-route-id="@item.Id" title="Visualizar">
+                                                            <spam class="fa fa-search"></spam>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="3">Não existe ideias aprovadas até o momento</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

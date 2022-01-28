@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tatu.Marchesan.Ideias.App", "Tatu.Marchesan.Ideias.Web\Tatu.Marchesan.Ideias.App.csproj", "{5169DC6F-65F2-4C50-B81C-89DB720DF25E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tatu.Marchesan.Ideias.Services", "Tatu.Marchesan.Ideias.Business\Tatu.Marchesan.Ideias.Services.csproj", "{3007CFD6-F1D7-458E-AD0C-A4633DEB7BD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tatu.Marchesan.Ideias.Infrastructure", "Tatu.Marchesan.Ideias.Data\Tatu.Marchesan.Ideias.Infrastructure.csproj", "{2CC0CF0B-5EC1-4ADB-9372-8494B427D427}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tatu.Marchesan.Ideias.Domain", "Tatu.Marchesan.Ideias.Domain\Tatu.Marchesan.Ideias.Domain.csproj", "{507E3738-74C3-4DB2-8D9A-8C4CA2343FAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tatu.Marchesan.Ideias.EmailService", "Tatu.Marchesan.Ideias.EmailService\Tatu.Marchesan.Ideias.EmailService.csproj", "{E6C2B9A8-25C3-409A-9AD9-AC035A44DF5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5169DC6F-65F2-4C50-B81C-89DB720DF25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5169DC6F-65F2-4C50-B81C-89DB720DF25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5169DC6F-65F2-4C50-B81C-89DB720DF25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5169DC6F-65F2-4C50-B81C-89DB720DF25E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3007CFD6-F1D7-458E-AD0C-A4633DEB7BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3007CFD6-F1D7-458E-AD0C-A4633DEB7BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3007CFD6-F1D7-458E-AD0C-A4633DEB7BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3007CFD6-F1D7-458E-AD0C-A4633DEB7BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC0CF0B-5EC1-4ADB-9372-8494B427D427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC0CF0B-5EC1-4ADB-9372-8494B427D427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC0CF0B-5EC1-4ADB-9372-8494B427D427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC0CF0B-5EC1-4ADB-9372-8494B427D427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507E3738-74C3-4DB2-8D9A-8C4CA2343FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507E3738-74C3-4DB2-8D9A-8C4CA2343FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507E3738-74C3-4DB2-8D9A-8C4CA2343FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507E3738-74C3-4DB2-8D9A-8C4CA2343FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C2B9A8-25C3-409A-9AD9-AC035A44DF5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C2B9A8-25C3-409A-9AD9-AC035A44DF5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C2B9A8-25C3-409A-9AD9-AC035A44DF5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C2B9A8-25C3-409A-9AD9-AC035A44DF5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A9F3BEA-24F5-4AD6-9653-5871B1C03D99}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://softsige.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tatu.Marchesan.Ideias.Web\\Tatu.Marchesan.Ideias.App.csproj
+		SccProjectName1 = Tatu.Marchesan.Ideias.Web
+		SccLocalPath1 = Tatu.Marchesan.Ideias.Web
+		SccProjectUniqueName2 = Tatu.Marchesan.Ideias.Domain\\Tatu.Marchesan.Ideias.Domain.csproj
+		SccProjectName2 = Tatu.Marchesan.Ideias.Domain
+		SccLocalPath2 = Tatu.Marchesan.Ideias.Domain
+		SccProjectUniqueName3 = Tatu.Marchesan.Ideias.Data\\Tatu.Marchesan.Ideias.Infrastructure.csproj
+		SccProjectName3 = Tatu.Marchesan.Ideias.Data
+		SccLocalPath3 = Tatu.Marchesan.Ideias.Data
+		SccProjectUniqueName4 = Tatu.Marchesan.Ideias.Business\\Tatu.Marchesan.Ideias.Services.csproj
+		SccProjectName4 = Tatu.Marchesan.Ideias.Business
+		SccLocalPath4 = Tatu.Marchesan.Ideias.Business
+		SccProjectUniqueName5 = Tatu.Marchesan.Ideias.EmailService\\Tatu.Marchesan.Ideias.EmailService.csproj
+		SccProjectName5 = Tatu.Marchesan.Ideias.EmailService
+		SccLocalPath5 = Tatu.Marchesan.Ideias.EmailService
+	EndGlobalSection
+EndGlobal

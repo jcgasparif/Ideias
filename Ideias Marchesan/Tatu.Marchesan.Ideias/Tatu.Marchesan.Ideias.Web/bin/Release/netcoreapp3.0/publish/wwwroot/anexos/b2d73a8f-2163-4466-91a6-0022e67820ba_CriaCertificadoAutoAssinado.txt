@@ -1,0 +1,11 @@
+
+Abrir o power shell
+
+Criando Certificado
+New-SelfSignedCertificate -certstorelocation Cert:\CurrentUser\My -dnsname localhost
+
+Colocar Senha no Certificado
+$pwd = ConvertTo-SecureString -String "123456" -Force -AsPlainText 
+
+Exporta o certificado
+Export-PfxCertificate -cert Cert:\CurrentUser\My\1A6FCC50971220F2807E4EAADBD21E2A5945FB2F -FilePath C:\Compartilhada\Cert.pfx -Password $pwd 

@@ -1,0 +1,9 @@
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\bin\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.deps.json
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\bin\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\bin\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.csprojAssemblyReference.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.AssemblyInfoInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.AssemblyInfo.cs
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.csproj.CoreCompileInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Domain\obj\Release\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.pdb

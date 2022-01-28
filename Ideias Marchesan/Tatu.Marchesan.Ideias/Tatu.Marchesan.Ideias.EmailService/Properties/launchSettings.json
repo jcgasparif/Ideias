@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Tatu.Marchesan.Ideias.EmailService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.deps.json
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Domain.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.csprojAssemblyReference.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.AssemblyInfoInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.AssemblyInfo.cs
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.csproj.CoreCompileInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.csproj.CopyComplete
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Services.pdb
