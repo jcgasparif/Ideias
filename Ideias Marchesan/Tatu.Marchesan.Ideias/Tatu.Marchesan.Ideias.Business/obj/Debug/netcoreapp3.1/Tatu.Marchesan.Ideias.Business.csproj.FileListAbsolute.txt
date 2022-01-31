@@ -1,9 +1,0 @@
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.deps.json
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.dll
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\bin\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.pdb
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.csprojAssemblyReference.cache
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.AssemblyInfoInputs.cache
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.AssemblyInfo.cs
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.csproj.CoreCompileInputs.cache
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.dll
-C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Tatu.Marchesan.Ideias\Tatu.Marchesan.Ideias.Business\obj\Debug\netcoreapp3.1\Tatu.Marchesan.Ideias.Business.pdb

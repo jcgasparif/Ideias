@@ -1,0 +1,42 @@
+﻿@using Softsige.Ideias.Domain.Entities.Models;
+@model IEnumerable<RelevanciasModel>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Peso</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Descricao</td>
+                            <td>@item.Peso</td>
+                            <td class="text-right">
+                                <div class="btn-group">
+                                    <a class="btn btn-white" asp-controller="Relevancia" asp-action="Edit" asp-route-id="@item.Id" title="Editar"><spam class="fa fa-pencil"></spam></a>
+                                    <a class="btn btn-white" data-id="@item.Id" data-toggle="modal" href="#modal-excluir-relevancia" title="Excluir"><spam class="fa fa-trash"></spam></a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3">Nenhuma relevância encontrada</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<partial name="_ExcluirRelevancia" />

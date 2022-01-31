@@ -1,0 +1,14 @@
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.deps.json
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Domain.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Services.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Services.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\bin\Release\netcoreapp3.1\Softsige.Ideias.Domain.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.csprojAssemblyReference.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.AssemblyInfo.cs
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.csproj.CopyComplete
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Data\obj\Release\netcoreapp3.1\Softsige.Ideias.Infrastructure.pdb

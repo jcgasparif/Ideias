@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mapping\AspNetRoleClaimsMap.cs" />
+    <Compile Remove="Mapping\AspNetRolesMap.cs" />
+    <Compile Remove="Mapping\AspNetUserClaimsMap.cs" />
+    <Compile Remove="Mapping\AspNetUserRolesMap.cs" />
+    <Compile Remove="Mapping\AspNetUsersMap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Softsige.Ideias.Data.csproj.vspscc" />
+    <None Remove="Softsige.Ideias.Infrastructure.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softsige.Ideias.Business\Softsige.Ideias.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+  </ItemGroup>
+
+</Project>

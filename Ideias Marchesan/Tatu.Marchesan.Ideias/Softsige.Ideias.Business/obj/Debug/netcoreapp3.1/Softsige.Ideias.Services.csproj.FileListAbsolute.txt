@@ -1,0 +1,12 @@
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\bin\Debug\netcoreapp3.1\Softsige.Ideias.Services.deps.json
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\bin\Debug\netcoreapp3.1\Softsige.Ideias.Services.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\bin\Debug\netcoreapp3.1\Softsige.Ideias.Services.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\bin\Debug\netcoreapp3.1\Softsige.Ideias.Domain.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\bin\Debug\netcoreapp3.1\Softsige.Ideias.Domain.pdb
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.csprojAssemblyReference.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.AssemblyInfoInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.AssemblyInfo.cs
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.csproj.CoreCompileInputs.cache
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.csproj.CopyComplete
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.dll
+C:\Users\JCGAPARIF\source\Workspaces\Ideias Marchesan\Softsige.Ideias\Softsige.Ideias.Business\obj\Debug\netcoreapp3.1\Softsige.Ideias.Services.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Softsige.Ideias.Services/1.0.0": {
+        "dependencies": {
+          "Softsige.Ideias.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Softsige.Ideias.Services.dll": {}
+        }
+      },
+      "Softsige.Ideias.Domain/1.0.0": {
+        "runtime": {
+          "Softsige.Ideias.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Softsige.Ideias.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Softsige.Ideias.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

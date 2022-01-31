@@ -1,0 +1,84 @@
+﻿@using Softsige.Ideias.App.Models;
+@using Softsige.Ideias.App.ViewModels;
+
+@model AppUser
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Gestão de Usuários</h2>
+        <small>Edite um usuário previamente cadastrado no sistema</small>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title header-blue">
+                    <h5>Editar usuário</h5>
+                </div>
+                <div class="ibox-content">
+                    <form asp-action="Edit" asp-controller="Admin" method="post">
+                        <input hidden id="@Model.Id" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Nome do usuário</label>
+                            <div class="col-sm-10">
+                                <input asp-for="UserName" class="form-control" disabled>
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">E-mail</label>
+                            <div class="col-sm-10">
+                                <input asp-for="Email" class="form-control">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="ibox-title">
+                            <h5>Lista de Permissões</h5>
+                            <div class="ibox-tools top-10">
+                                <p>
+                                    <a data-toggle="modal" class="btn btn-primary btn-sm" href="#modal-adicionar-claim">Nova Permissão</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ibox-content" id="lista-claim-content">
+                            <partial name="_ListaClaims" model="@(List<ClaimViewModel>)ViewBag.Claims" />
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="ibox-title">
+                            <h5>Lista de Perfis</h5>
+                            <div class="ibox-tools top-10">
+                                <p>
+                                    <a data-toggle="modal" class="btn btn-primary btn-sm" href="#modal-adicionar-role">&nbsp;Novo Perfil&nbsp;</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ibox-content" id="lista-role-content">
+                            <partial name="_ListaRole" model="@(List<RoleViewModel>)ViewBag.RolesUser" />
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-right">
+                                <a class="btn btn-white" asp-controller="Admin" asp-action="Index">Cancelar</a>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_AdicionarClaim" model="@new ClaimViewModel() { UserId = Model.Id}" />
+<partial name="_ExcluirClaim" />
+
+<partial name="_AdicionarRole" model="@new RoleViewModel() { UserId = Model.Id}" />
+<partial name="_ExcluirRole" />
+
+@section Scripts {
+    <script async src="~/js/usuario.min.js" asp-append-version="true"></script>
+}
