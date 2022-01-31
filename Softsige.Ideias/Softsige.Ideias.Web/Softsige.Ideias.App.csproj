@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-Softsige.Ideias.App-30575004-C6D6-4F01-80DD-5B5E1B7D12AD</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\**" />
+    <Compile Remove="wwwroot\anexos\**" />
+    <Content Remove="Areas\**" />
+    <Content Remove="wwwroot\anexos\**" />
+    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="wwwroot\anexos\**" />
+    <None Remove="Areas\**" />
+    <None Remove="wwwroot\anexos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\ResetPasswordViewModel.cs" />
+    <Compile Remove="ViewModels\UserCreateViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Login.cshtml" />
+    <Content Remove="Views\Usuarios\Create.cshtml" />
+    <Content Remove="Views\Usuarios\Delete.cshtml" />
+    <Content Remove="Views\Usuarios\Details.cshtml" />
+    <Content Remove="Views\Usuarios\Edit.cshtml" />
+    <Content Remove="wwwroot\lib\Popper\popper.min.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Softsige.Ideias.App.csproj.vspscc" />
+    <None Remove="Softsige.Ideias.Web.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\datapicker\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="8.0.1" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="WebMarkupMin.AspNet.Brotli" Version="2.8.1" />
+    <PackageReference Include="WebMarkupMin.AspNetCore3" Version="2.8.9" />
+    <PackageReference Include="WebMarkupMin.NUglify" Version="2.8.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softsige.Ideias.Data\Softsige.Ideias.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties appsettings_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,123 @@
+﻿@using Softsige.Ideias.App.ViewModels
+@model IdeiasViewModel
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Gestão de Ideias</h2>
+        <small>Utilize esta página para cadastrar uma ideia no sistema</small>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title header-blue">
+                    <h5>Nova ideia</h5>
+                </div>
+                <div class="ibox-content">
+                    <form asp-controller="Ideias" asp-action="Create">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="AspNetUsersId" />
+                        <input type="hidden" asp-for="DataInclusao" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group row">
+                            <label asp-for="Descricao" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <input asp-for="Descricao" class="form-control">
+                                <span asp-validation-for="Descricao" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label asp-for="ProdutoNovo" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10" style="margin-top:8px;">
+                                <input asp-for="ProdutoNovo">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="ProdutoExistente" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <input asp-for="ProdutoExistente" class="form-control" disabled>
+                                <span asp-validation-for="ProdutoExistente" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label asp-for="ExisteConcorrente" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10" style="margin-top:8px;">
+                                <input asp-for="ExisteConcorrente">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label asp-for="DetalhesConcorrente" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <textarea asp-for="DetalhesConcorrente" class="form-control" disabled></textarea>
+                                <span asp-validation-for="DetalhesConcorrente" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label asp-for="Argumentos" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <textarea asp-for="Argumentos" class="form-control"></textarea>
+                                <span asp-validation-for="Argumentos" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label asp-for="DataSubAnalise" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <input asp-for="DataSubAnalise" class="form-control" disabled>
+                                <span asp-validation-for="DataSubAnalise" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <label asp-for="StatusId" class="col-sm-2 col-form-label"></label>
+                            <div class="col-sm-10">
+                                <select asp-for="StatusId" class="form-control m-b" asp-items="ViewBag.Status" disabled></select>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="ibox-title">
+                            <h5>Anexos</h5>
+                            <div class="ibox-tools top-10">
+                                <a data-toggle="modal" class="btn btn-primary btn-sm" href="#modal-adicionar-anexo">Novo anexo</a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Descrição</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">Nenhum anexo adicionado até o momento</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-right">
+                                <a class="btn btn-white" asp-controller="Ideias" asp-action="Index">Cancelar</a>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<partial name="_AdicionarAnexos" model="@new AnexosViewModel() { IdeiaId = Model.Id }" />
+<partial name="_ExcluirAnexos" />
+
+@section Scripts {
+    <script async src="~/js/ideias.min.js" asp-append-version="true"></script>
+}

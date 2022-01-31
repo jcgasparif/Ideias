@@ -1,0 +1,96 @@
+﻿@using Softsige.Ideias.App.ViewModels;
+@model IdeiasViewModel
+
+<div id="ibox-title-comite-detalhes-ideia" class="ibox-title header-green">
+    <h5>Detalhes da Ideia</h5>
+    <div class="ibox-tools">
+        <i id="ibox-tools-comite-detalhes-ideia-chevron" class="fa fa-chevron-down text-white"></i>
+    </div>
+</div>
+<div id="ibox-content-comite-detalhes-ideia" class="ibox-content" style="display:none;">
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.DataInclusao)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.DataInclusao)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.Descricao)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.ProdutoNovo)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.ProdutoNovo)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.ProdutoExistente)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.ProdutoExistente)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.ExisteConcorrente)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.ExisteConcorrente)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.DetalhesConcorrente)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.DetalhesConcorrente)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.Argumentos)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.Argumentos)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.DataSubAnalise)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.DataSubAnalise)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(model => model.Status)
+        </div>
+        <div class="col-sm-10 col-form-label">
+            @Html.DisplayFor(model => model.Status.Descricao)
+        </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div class="ibox-title">
+        <h5>Anexos</h5>
+    </div>
+    <div class="ibox-content">
+        <partial name="_ListaAnexos" model="@Model" />
+    </div>
+</div>

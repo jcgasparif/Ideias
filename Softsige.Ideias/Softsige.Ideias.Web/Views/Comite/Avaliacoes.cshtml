@@ -1,0 +1,69 @@
+﻿@using Softsige.Ideias.App.ViewModels;
+
+@model IEnumerable<AvaliacoesViewModel>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>Gestão do Comitê</h2>
+        <small>Utilize esta página para visualizar as avaliações de uma ideia</small>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title header-blue">
+                    <h5>Avaliações da Ideia</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nome do avaliador</th>
+                                    <th class="text-center">1ª Avaliação</th>
+                                    <th class="text-center">QT E-mail enviado</th>
+                                    <th class="text-center">2ª Avaliação</th>
+                                    <th class="text-center">QT E-mail enviado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    if (Model.Any())
+                                    {
+                                        foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>@item.AvaliadorNome</td>
+                                                <td class="text-center"><spam class="fa fa-@(item.PrimeiraAnalise ? "check green" : "times-circle red")"></spam></td>
+                                                <td class="text-center">@item.EmailPrimeiraAnalise</td>
+                                                <td class="text-center"><spam class="fa fa-@(item.SegundaAnalise ? "check green" : "times-circle red")"></spam></td>
+                                                <td class="text-center">@item.EmailSegundaAnalise</td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="3">Não existe avaliações até o momento</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 text-right">
+                            <a class="btn btn-white" asp-controller="Comite" asp-action="Index">Voltar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script async src="~/js/comite.min.js" asp-append-version="true"></script>
+}

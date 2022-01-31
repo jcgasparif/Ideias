@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TATU Marchesan - Painel de Ideias</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+</head>
+
+<body class="gray-bg">
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+            <div class="col-md-6" style="color: #fff; background-color: #00428c;">
+                <div class="dropdown profile-element text-center">
+                    <img alt="image" src="~/Images/logotatu2019.png" class="text-center" style="width: 320px;padding-top:20px !important;" /><br />
+                    <div class="label label-primary text-center" style="font-size:32px;padding-top:10px !important;padding-bottom: 10px !important;">MARCHESAN</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ibox-content" style="padding:0;">
+                    <div class="ibox-title" style="color: #fff;background-color: #00428c;border-color:#00428c;">
+                        <h3><i class="fa fa-comments"></i>&nbsp;&nbsp;Painel de ideias</h3>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form class="m-t" role="form" action="index.html">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Usuário" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Senha" required="">
+                        </div>
+                        <button type="submit" class="btn btn-primary block full-width m-b" asp-controller="Home" asp-action="Index">Login</button>
+                        <a href="#">
+                            <small>Esqueceu a senha?</small>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
